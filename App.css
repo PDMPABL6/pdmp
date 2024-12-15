@@ -1,0 +1,134 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.pdmp-app {
+  display: flex;
+  height: 100vh; /* Full height for the entire app */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 150px; /* Reduced width from 250px to 150px */
+  background-color: #343a40; /* Sidebar background color */
+  color: white;
+  padding: 15px; /* Reduced padding to make it more compact */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh; /* Makes sure the sidebar takes up the full screen height */
+  position: fixed; /* Keeps the sidebar fixed as you scroll */
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0; /* Reduce the spacing between list items */
+  font-size: 14px; /* Slightly smaller font size */
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  color: #17a2b8;
+}
+
+/* Main content styles */
+.main-content {
+  margin-left: 150px; /* Adjust margin to match the sidebar width */
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.app-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.app-header p {
+  margin: 5px 0 0;
+}
+
+/* Filter styles */
+.filters {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters h2 {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+/* Table styles */
+.prescription-table {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.prescription-table h2 {
+  margin: 0 0 15px;
+  font-size: 18px;
+}
+
+.prescription-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prescription-table th,
+.prescription-table td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.prescription-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.prescription-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
